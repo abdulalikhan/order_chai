@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:order_chai/models/user.dart';
+import 'package:order_chai/screens/wrapper.dart';
+import 'package:order_chai/services/auth.dart';
+import 'package:provider/provider.dart';
 
 void main() {
   runApp(MyApp());
@@ -7,18 +11,10 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        body: Container(
-          child: Center(
-            child: Text(
-              'Hello World',
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
-        ),
+    return StreamProvider<User>.value(
+      value: AuthService().user,
+      child: MaterialApp(
+        home: Wrapper(),
       ),
     );
   }

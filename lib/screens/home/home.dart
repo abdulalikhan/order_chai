@@ -49,7 +49,14 @@ class Home extends StatelessWidget {
             )
           ],
         ),
-        body: chaiList(),
+        body: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('assets/chai_bg.png'),
+                fit: BoxFit.cover,
+              ),
+            ),
+            child: chaiList()),
       ),
     );
   }

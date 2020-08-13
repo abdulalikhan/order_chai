@@ -57,7 +57,7 @@ class _SettingsFormState extends State<SettingsForm> {
                     items: sugars.map((sugar) {
                       return DropdownMenuItem(
                         value: sugar,
-                        child: Text('$sugar sugars'),
+                        child: Text('$sugar sugar(s)'),
                       );
                     }).toList(),
                     onChanged: (val) => setState(() => _currentSugars = val),
@@ -78,7 +78,7 @@ class _SettingsFormState extends State<SettingsForm> {
                   ),
 
                   RaisedButton(
-                    color: Colors.pink,
+                    color: Colors.green[500],
                     child: Text(
                       'Update',
                       style: TextStyle(

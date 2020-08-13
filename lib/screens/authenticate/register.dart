@@ -26,18 +26,22 @@ class _RegisterState extends State<Register> {
     return loading
         ? Loading()
         : Scaffold(
-            backgroundColor: Colors.brown[100],
+            backgroundColor: Colors.blueGrey[100],
             appBar: AppBar(
-              backgroundColor: Colors.brown[400],
+              backgroundColor: Colors.green[500],
               elevation: 0.0,
-              title: Text('Sign up Order Chai'),
+              title: Text('Sign Up to Order Chai'),
               actions: [
                 FlatButton.icon(
                   icon: Icon(
                     Icons.person,
+                    color: Colors.white,
                   ),
                   label: Text(
                     'Sign In',
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
                   ),
                   onPressed: () {
                     widget.toggleView();
@@ -87,7 +91,7 @@ class _RegisterState extends State<Register> {
                       height: 20,
                     ),
                     RaisedButton(
-                      color: Colors.pink[400],
+                      color: Colors.green[500],
                       child: Text(
                         'Register',
                         style: TextStyle(

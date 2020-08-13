@@ -32,19 +32,35 @@ class Home extends StatelessWidget {
           title: Text(
             'Order Chai',
           ),
-          backgroundColor: Colors.brown[400],
+          backgroundColor: Colors.green[500],
           elevation: 0.0,
           actions: [
             FlatButton.icon(
-              icon: Icon(Icons.person),
+              icon: Icon(
+                Icons.person,
+                color: Colors.white,
+              ),
               onPressed: () async {
                 await _auth.signOut();
               },
-              label: Text('Logout'),
+              label: Text(
+                'Logout',
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
             ),
             FlatButton.icon(
-              icon: Icon(Icons.settings),
-              label: Text('Settings'),
+              icon: Icon(
+                Icons.settings,
+                color: Colors.white,
+              ),
+              label: Text(
+                'Settings',
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
               onPressed: () => _showSettingsPanel(),
             )
           ],

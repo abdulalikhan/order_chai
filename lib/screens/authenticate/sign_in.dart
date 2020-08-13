@@ -26,18 +26,22 @@ class _SignInState extends State<SignIn> {
     return loading
         ? Loading()
         : Scaffold(
-            backgroundColor: Colors.brown[100],
+            backgroundColor: Colors.blueGrey[100],
             appBar: AppBar(
-              backgroundColor: Colors.brown[400],
+              backgroundColor: Colors.green[500],
               elevation: 0.0,
-              title: Text('Sign in to Order Chai'),
+              title: Text('Sign In to Order Chai'),
               actions: [
                 FlatButton.icon(
                   icon: Icon(
                     Icons.person,
+                    color: Colors.white,
                   ),
                   label: Text(
                     'Register',
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
                   ),
                   onPressed: () {
                     widget.toggleView();
@@ -87,7 +91,7 @@ class _SignInState extends State<SignIn> {
                       height: 20,
                     ),
                     RaisedButton(
-                      color: Colors.pink[400],
+                      color: Colors.green[500],
                       child: Text(
                         'Sign in',
                         style: TextStyle(

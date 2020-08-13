@@ -3,10 +3,7 @@
 Order Chai is a Mobile Application designed in Flutter that allows you to seamlessly collect and track multiple chai orders.
 
 ## Screenshots
-![Splash Screen](https://i.ibb.co/Rjfj7rJ/1.jpg)
-![Sign in](https://i.ibb.co/LgVdQLJ/2.jpg)
-![Dashboard](https://i.ibb.co/9qQxqX5/3.jpg)
-![Update Screen](https://i.ibb.co/HTZRHVD/4.jpg)
+<img src="screenshots/1.jpg" height="300em" /> <img src="screenshots/2.jpg" height="300em" /> <img src="screenshots/3.jpg" height="300em" /> <img src="screenshots/4.jpg" height="300em" />
 
 ## Packages
 * cupertino_icons: [link](https://pub.dev/packages/cupertino_icons)
